@@ -64,6 +64,7 @@ CHANGELOG.md
 
 # ignore all custom json files for config
 config.*.json
+!config.development.json
 
 # Built asset files
 /core/server/admin/views/*
