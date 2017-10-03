@@ -19,6 +19,31 @@ cd blog
 git remote add clever git+ssh://git@push-par-clevercloud-customers.services.clever-cloud.com/app_ea7499a8-d913-4bcc-9c14-5705b4263dd0.git
 ```
 
+## Start a local instance
+
+### Default Ghost config (sqlite3 database)
+
+```bash
+# nvm use v6.11.3
+npm install
+node index
+```
+
+Then open http://127.0.0.1:2368
+
+### Vavr development config (MySQL database)
+
+**Prerequisites:** Running MySQL instance (see below)
+
+```bash
+export NODE_ENV=development
+# nvm use v6.11.3
+npm install
+node index
+```
+
+Then open http://0.0.0.0:8080
+
 ## Ghost Version Update
 
 ### Backup
